@@ -1,4 +1,4 @@
-const {STATUS_LIST, TIME_REG_EXP} = require('./constants');
+const {STATUS_LIST, TIME_REG_EXP, ERROR_OCCURED} = require('./constants');
 const {selectQuery}= require('../db-utilities/db-utility');
 
 const getInstructorIds= async ()=>{

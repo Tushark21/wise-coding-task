@@ -1,28 +1,28 @@
-### Installation
+# Installation
 * Node Js is required to run this project (install nodejs).
 * In the main folder run npm i in the terminal
 
-### Running
+# Running
 * In the main folder run node app.js in the terminal
 
-### Design
+# Design
 
-## CHECK-IN & CHECK-OUT
+### CHECK-IN & CHECK-OUT
 * check-in & check-out are performed using POST API (separate calls but same API for check-in and check-out )
-    http://localhost:8000/check
+    * http://localhost:8000/check
 * It requires 4 body parameters: instructorId, date, time, status.
 * status can have two values CHRCK-IN or CHECK-OUT depending on the case.
 
-## REPORT
+### REPORT
 * monthly hours report can be obtained by using GET API:
-    # http://localhost:8000/full-report?month=________
-    # http://localhost:8000/report?month=________
+    * http://localhost:8000/full-report?month=________
+    * http://localhost:8000/report?month=________
 
 * In these APIs month name needs to be passed as a query parameter.
 * full-report API returns the detailed in-out data of each instructors for the required month.
 * report API returns the total checked-in time of the instructors for the required month. 
 
-## DB INFO
+### DB INFO
 * Using sqlite3 database
 * There are 2 tables:
     instructors: (id PRIMARY KEY, name) for instructors details.
@@ -46,7 +46,7 @@
 
 * slots table will be empty in the beginning.
 
-### Assumptions
+# Assumptions
 * date should be in ISO format i,e. YYYY-MM-DD
 * time should be in 24-hours format i,e. HH:MM:SS
 * status can have only two values check-in and check-out.
@@ -59,3 +59,4 @@
 * JWT tokens are not used to keep the evalaution simple and easy.
 
 note: These assumptions were made because of unclear requirements, any of the functionality can be changed as required.
+

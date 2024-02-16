@@ -1,4 +1,4 @@
-const express=require('express');
+const express = require('express');
 const {addTime, generateReport, generateDetailedReport, init}=require('./utilities/utility');
 const app=express();
 app.use(express.json());
