@@ -9,14 +9,14 @@
 
 ### CHECK-IN & CHECK-OUT
 * check-in & check-out are performed using POST API (separate calls but same API for check-in and check-out )
-    http://localhost:8000/check
+    * http://localhost:8000/check
 * It requires 4 body parameters: instructorId, date, time, status.
 * status can have two values CHRCK-IN or CHECK-OUT depending on the case.
 
 ### REPORT
 * monthly hours report can be obtained by using GET API:
-    # http://localhost:8000/full-report?month=________
-    # http://localhost:8000/report?month=________
+    * http://localhost:8000/full-report?month=________
+    * http://localhost:8000/report?month=________
 
 * In these APIs month name needs to be passed as a query parameter.
 * full-report API returns the detailed in-out data of each instructors for the required month.
